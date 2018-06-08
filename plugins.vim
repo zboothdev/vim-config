@@ -48,9 +48,9 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'scrooloose/nerdtree'
 " }}}
 
-" {{{ vim-colors-solarized
-" Solarized colorscheme.
-Plug 'altercation/vim-colors-solarized'
+" {{{ vim-solarized
+" Solarized colorscheme. Simpler fork of 'altercation/vim-colors-solarized'
+Plug 'ericbn/vim-solarized'
 " }}}
 
 " {{{ Vim Linux Coding Style
