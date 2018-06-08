@@ -25,13 +25,10 @@ let g:go_version_warning = 0
 Plug 'kergoth/vim-bitbake'
 " }}}
 
-" {{{ vim-vimproc
-" vimproc is a great asynchronous execution library for Vim.
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-" }}}
-
+" {{{ vim-fugitive
 "wrapper for git commands
-"Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
+" }}}
 
 " {{{ vim-gitgutter
 "signs for add, delete, change
@@ -78,6 +75,12 @@ Plug 'vim-airline/vim-airline-themes'
 " NeoVim/Vim plugin performing project-wide async search and replace, similar to SublimeText, Atom et al.
 Plug 'eugen0329/vim-esearch'
 " }}}
+
+" {{{ vim-tmux-navigator
+" Smart pane switching.
+Plug 'christoomey/vim-tmux-navigator'
+" }}}
+
 
 "Add plugins to &runtimepath
 call plug#end()
