@@ -68,7 +68,7 @@ if has('gui_running')
     set guioptions-=m "remove menu bar
 endif
 
-"filetype plugin on
+filetype plugin indent on
 syntax on
 set t_Co=256
 set background=dark
@@ -82,8 +82,11 @@ autocmd!
     "Remove WS when a buffer is written
     autocmd BufWritePre * :%s/\s\+$//e
 
+    " Treat WAF wscript as a python file
+    autocmd BufNewFile,BufRead wscript* set filetype=python
+
+    " Udev rules
     autocmd FileType hog set filetype=udevrules
-    "autocmd FileType c set tabstop=8 noexpandtab
 augroup END
 
 "Nerdtree mapping
