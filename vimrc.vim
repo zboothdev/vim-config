@@ -124,6 +124,9 @@ nmap <leader>l :set list!<CR>
 " leader f to search for filename under cursor using fzf
 nnoremap <leader>f <Esc>:call fzf#vim#files('', {'options':'--query='.fzf#shellescape(expand('<cfile>:t'))})<CR>
 
+" leader o to open directory of the current file.
+nnoremap <leader>o <Esc>:exec "e " . expand('%:p:h')<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
