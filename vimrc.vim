@@ -99,6 +99,7 @@ map <F12> :buffers<BAR>
            \let i = input("Buffer number: ")<BAR>
            \execute "buffer " . i<CR>
 
+map <C-p> :Files<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
