@@ -1,23 +1,5 @@
 "Plugins Setup
 
-" {{{ ctrlp
-" 'kien/ctrlp.vim'
-let g:ctrlp_max_files           = 0
-let g:ctrlp_working_path_mode   = 'rw'
-let g:ctrlp_custom_ignore       = {
-    \ 'dir': '\v[\/](build|bitmaps)(BB|SYS|LDR|LDRBB|XLDR|FLSHLDR)(DBG|DVL|REL).*$',
-    \ 'file': '\v\.(obj)$'}
-let g:ctrlp_by_filename         = 1
-let g:ctrlp_lazy_update         = 1
-let g:ctrlp_use_caching         = 1
-let g:ctrlp_cache_dir           = $HOME.'/.cache/ctrlp'
-let g:ctrlp_clear_cache_on_exit = 0
-" Use ag for ctrlp if available.
-if executable('ag')
-    let g:ctrlp_user_command = 'ag %s -U --nocolor -g ""'
-endif
-" }}}
-
 " {{{ ack.vimx
 " Vim plugin for the Perl module / CLI script 'ack'
 " Can also be used with ag.

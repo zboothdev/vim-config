@@ -1,11 +1,6 @@
 " Vim Plug plugins
 call plug#begin('~/.vim/plugged')
 
-" {{{ ctrlp
-"fuzzy file search, defaults to <Ctrl-P>
-Plug 'kien/ctrlp.vim'
-" }}}
-
 " {{{ fzf
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run install script
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
