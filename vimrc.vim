@@ -101,6 +101,9 @@ map <F12> :buffers<BAR>
 
 map <C-p> :Files<CR>
 
+" Copy current file path into + register (system paste buffer)
+map <leader>cp :let @+ = expand("%:p")<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
