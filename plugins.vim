@@ -3,8 +3,10 @@ call plug#begin('~/.vim/plugged')
 
 " {{{ fzf
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run install script
+"set rtp+=~/.fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+"Plug '~/.fzf'
   " Both options are optional. You don't have to install fzf in ~/.fzf
   " and you don't have to run install script if you use fzf only in Vim.
 " }}}
@@ -76,6 +78,10 @@ Plug 'eugen0329/vim-esearch'
 Plug 'christoomey/vim-tmux-navigator'
 " }}}
 
+" {{{ vim-surround
+" quoting/parenthesizing made simple
+Plug 'tpope/vim-surround'
+" }}}
 
 "Add plugins to &runtimepath
 call plug#end()
