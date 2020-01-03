@@ -4,5 +4,5 @@ vim configuration
 # Installation
 ```
 git clone https://github.com/zboothdev/vim-config.git ~/.vim
-echo 'so ~/.vim/vimrc.vim' > .vimrc'
+echo 'so ~/.vim/vimrc.vim' > '.vimrc'
 ```
