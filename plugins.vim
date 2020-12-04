@@ -95,6 +95,7 @@ let g:ale_echo_msg_format = '[%linter%:%severity%]: %code: %%s'
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_cache_executable_check_failures = 1
+let g:ale_python_flake8_options = '--max-line-length=88'
 " }}}
 
 "Add plugins to &runtimepath
