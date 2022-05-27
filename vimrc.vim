@@ -58,6 +58,8 @@ set wildmenu        " Show the completion menu
 set wildmode=list:longest "A list of completions will be shown and the command
                           "will be completed to the longest common command.
 
+set spell spelllang=en_us " Enable spell checking.
+
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
 set list
 
