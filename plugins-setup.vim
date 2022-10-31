@@ -23,7 +23,7 @@ let g:airline_theme='dark'
 
 " {{{ vim-esearch
 " NeoVim/Vim plugin performing project-wide async search and replace, similar to SublimeText, Atom et al.
-     let g:esearch#out#win#open = 'vertical botright new'
+     map  <leader>ff  <plug>(operator-esearch-prefill)
 " }}}
 
 " vim: set foldmethod=marker:
