@@ -72,10 +72,16 @@ endif
 
 filetype plugin indent on
 syntax on
-set t_Co=256
+
+" Colorscheme options
 set background=dark
-colorscheme solarized
+if !has ('nvim') " is vim
+    " See ':h xterm-true-color' for the details.
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
 set termguicolors
+colorscheme selenized
 
 noremap <leader>n :set relativenumber!<CR>
 
